@@ -13,7 +13,7 @@ const handler: Handler = async (event, context) => {
     const newScore = JSON.parse(event.body) as ScoreEntry;
     await prisma.player_scores.create({
       data: {
-        player_id: BigInt(newScore.playerId),
+        player_id: parseInt(newScore.playerId),
         score: parseInt(newScore.score)
       },
     });
