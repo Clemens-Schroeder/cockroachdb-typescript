@@ -44,7 +44,7 @@ export default function Admin() {
     return <>
         <h2>Admin</h2>
         <h4>Add a Leaderboard Entry</h4>
-        {
+        {   <>
             <div className="mb-3 score-entry">
                 <label>Player</label>
                 <input type="text"
